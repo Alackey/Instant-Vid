@@ -1,0 +1,30 @@
+{
+
+    "manifest_version": 2,
+
+    "name": "Instant Vid",
+    "description": "This extension automatically clicks the next button for Amazon Instant Video",
+    "version": "1.0",
+
+    "browser_action":{
+        "default_icon": "play.png"
+    },
+    "permissions": [
+        "tabs",
+        "https://www.amazon.com/gp/B0*",
+        "https://www.amazon.com/dp/B0*",
+        "https://www.amazon.com/gp/product/B0*",
+        "https://www.amazon.com/dp/product/B0*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.amazon.com/gp/B0*",
+                "https://www.amazon.com/dp/B0*",
+                "https://www.amazon.com/gp/product/B0*",
+                "https://www.amazon.com/dp/product/B0*"
+            ],
+            "js": ["next.js"]
+        }
+    ]
+}
