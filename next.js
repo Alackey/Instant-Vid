@@ -7,7 +7,7 @@ function waitForNext() {
         }
 
         waitForNext();
-    }, 1000);
+    }, 800);
 }
 
 
