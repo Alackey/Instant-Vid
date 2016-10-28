@@ -3,7 +3,7 @@
     "manifest_version": 2,
 
     "name": "Instant Vid",
-    "description": "This extension automatically clicks the next button for Amazon Instant Video",
+    "description": "This extension automatically clicks the next button for Amazon Instant Video.",
     "version": "1.0",
 
     "browser_action":{
